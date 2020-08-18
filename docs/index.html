@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Rain-Mobile-React-UI,一款轻量级的React UI库</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<span class="logoLink">Rain-Mobile-React-UI</span>
+			<a href="http://www.9abj.com/rain-mobile-react-ui/">组件</a>
+		</header>
+		<main>
+			<section id="moveWrap">
+				<div class="logo">Rain-Mobile-React-UI</div>
+			</section>
+			<section class="describeWrap">
+				<h1>一款轻量级的React UI库</h1>
+				<div class="jumpBtn">
+					<a href="http://www.9abj.com/rain-mobile-react-ui/" class="startBtn"
+						>开始使用</a
+					>
+					<a
+						href="https://github.com/RainyNight9/rain-mobile-react-ui"
+						class="gitBtn"
+						target="_blank"
+						>GitHub</a
+					>
+				</div>
+			</section>
+		</main>
+
+		<script type="text/javascript">
+			document.onmousemove = function (e) {
+				e = e || window.event
+				var x = 0.5 - e.clientX / document.body.offsetWidth
+				var y = 0.5 - e.clientY / document.body.offsetHeight
+				document.getElementById('moveWrap').style.transform =
+					'translate(' + x * 100 + 'px,' + y * 100 + 'px)'
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+# 忽略目录
+config/
+script/
+public/
+src/
+ 
+# 忽略指定文件
+.babelrc.js
